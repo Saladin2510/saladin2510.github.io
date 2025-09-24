@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      /* bikin garis arsir (hatch) */
+      .striped {
+        background-image: repeating-linear-gradient(
+          45deg,
+          /* sudut garis */ black 0 2px,
+          /* warna garis */ transparent 2px 6px /* jarak antar garis */
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-900">
+    <!-- NAVBAR -->
+
+    <!-- <nav
+      class="bg-white border-b-4 border-b-black flex p-2 justify-between item-center"
+    >
+      Logo
+      <div class="px-6 py-4 font-semibold tracking-widest">SALADIN</div>
+      Menu
+      <div class="flex">
+        <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2"
+          >TENTANG</a
+        >
+        <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2"
+          >PENGALAMAN</a
+        >
+        <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2"
+          >PROJEK</a
+        >
+        <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2"
+          >KONTAK</a
+        >
+      </div>
+    </nav> -->
+
+    <!-- KONTEN -->
+    <main class="bg-white flex">
+      <!-- garis kiri -->
+      <div class="ml-0 sm:ml-6 md:ml-6 lg:ml-16 w-5 lg:w-11 striped border-l-2 border-r-2 border-black"></div>
+
+      <!-- isi konten -->
+      <div class="flex-1">
+        <div class="h-screen">tes</div>
+      </div>
+
+      <!-- garis kanan -->
+      <div class="mr-0 sm:mr-6 md:ml-6 lg:mr-16 w-5 lg:w-11 striped border-l-2 border-r-2 border-black"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
