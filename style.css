@@ -1,0 +1,31 @@
+/* bikin garis arsir (hatch) */
+.striped {
+  background-image: repeating-linear-gradient(45deg,
+      /* sudut garis */
+      black 0 1px,
+      /* warna garis */
+      transparent 4px 8px
+      /* jarak antar garis */
+    );
+}
+
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
+.noto1 {
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.noto2 {
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
