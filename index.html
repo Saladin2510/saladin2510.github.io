@@ -1,60 +1,92 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saladin | Portofolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-      /* bikin garis arsir (hatch) */
-      .striped {
-        background-image: repeating-linear-gradient(
-          45deg,
-          /* sudut garis */ black 0 1px,
-          /* warna garis */ transparent 4px 8px /* jarak antar garis */
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saladin | Portofolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* bikin garis arsir (hatch) */
+    .striped {
+      background-image: repeating-linear-gradient(45deg,
+          /* sudut garis */
+          black 0 1px,
+          /* warna garis */
+          transparent 4px 8px
+          /* jarak antar garis */
         );
-      }
-    </style>
-  </head>
-  <body class="bg-neutral-900">
-    <!-- NAVBAR -->
+    }
+  </style>
+</head>
 
-    <!-- <nav
-      class="bg-white border-b-4 border-b-black flex p-2 justify-between item-center"
-    >
-      Logo
-      <div class="px-6 py-4 font-semibold tracking-widest">SALADIN</div>
-      Menu
-      <div class="flex">
-        <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2"
-          >TENTANG</a
-        >
-        <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2"
-          >PENGALAMAN</a
-        >
-        <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2"
-          >PROJEK</a
-        >
-        <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2"
-          >KONTAK</a
-        >
-      </div>
-    </nav> -->
+<body class="bg-neutral-900">
+  <!-- NAVBAR -->
 
-    <!-- KONTEN -->
-    <main class="bg-white flex">
-      <!-- garis kiri -->
-      <div class="ml-0 lg:ml-16 w-5 lg:w-9 striped border-l-0 border-r-0 lg:border-l-1 lg:border-r-1 border-black"></div>
+  <!-- <nav class="bg-white border-b-2 border-b-black flex p-2 justify-between item-center">
+    <div class="px-6 py-4 font-semibold tracking-widest">SALADIN</div>
+    <div class="flex">
+      <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2">TENTANG</a>
+      <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2">PENGALAMAN</a>
+      <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2">PROJEK</a>
+      <a href="" class="px-10 py-4 hover:bg-gray-200 border-dashed border-l-2">KONTAK</a>
+    </div>
+  </nav> -->
 
-      <!-- isi konten -->
-      <div class="flex-1">
-        <div class="h-screen">tes</div>
-      </div>
+  <!-- KONTEN -->
+  <main class="bg-white flex">
+    <!-- garis kiri -->
+    <div class="ml-0 lg:ml-16 w-5 lg:w-9 striped border-l-0 border-r-0 lg:border-l-1 lg:border-r-1 border-black"></div>
 
-      <!-- garis kanan -->
-      <div class="mr-0 lg:mr-16 w-5 lg:w-9 striped border-l-0 border-r-0 lg:border-l-1 lg:border-r-1 border-black"></div>
-    </main>
+    <!-- isi konten -->
+    <div class="flex-1 flex flex-col justify-center p-2">
 
-    <script src="script.js"></script>
-  </body>
+      <!-- Intro -->
+      <p class="text-sm mt-10">Profile</p>
+      <hr class="border-t border-gray-800" />
+      <section class="flex flex-col lg:flex-row items-center lg:items-start gap-8 mt-6">
+        <!-- teks -->
+        <div class="flex-1">
+          <h1 class="text-6xl font-bold my-2">Saladin Octiano Bonanza</h1>
+          <p class="text-base text-gray-700 tracking-wide my-6">
+            Programmer | Designer | Student
+          </p>
+          <div class="item-center gap-5 mb-4">
+            <a href=""><i class="fa-brands fa-instagram text-5xl hover:text-red-900"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin text-5xl hover:text-red-900"></i></a>
+            <a href="" class=""><i class="fa-brands fa-github text-5xl hover:text-red-900"></i></a>
+          </div>
+        </div>
+
+        <!-- gambar -->
+        <div class="items-center justify-center lg:mr-36">
+          <img src="assets/profile.png" alt="foto profil" />
+        </div>
+      </section>
+
+      <hr class="border-t border-gray-800" />
+      <section class="flex flex-col lg:flex-row items-center lg:items-start gap-8 mt-6 ">
+        <!-- teks -->
+        <div class="flex-1">
+          <h1 class="text-6xl font-bold">Saladin </h1>
+          <p class="text-base text-gray-700 tracking-wide my-3">
+            Programmer | Designer | Student
+          </p>
+
+          <!-- gambar -->
+          <div class="w-90 items-center justify-center lg:mx-34">
+            <img src="" alt="foto profil" />
+          </div>
+      </section>
+
+    </div>
+
+    <!-- garis kanan -->
+    <div class="mr-0 lg:mr-16 w-5 lg:w-9 striped border-l-0 border-r-0 lg:border-l-1 lg:border-r-1 border-black"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
