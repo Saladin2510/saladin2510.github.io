@@ -36,13 +36,34 @@
     <!-- isi konten -->
     <div class="flex-1 flex flex-col justify-center p-2">
 
+      <!-- animasi -->
+      <section class="flex flex-col items-center gap-8 mt-6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum distinctio unde, quam odio
+          nesciunt, cumque explicabo itaque temporibus sit quos nisi dolore tempore, illo ipsam dolorem magnam!
+          Exercitationem, accusamus.</p>
+        <svg width="800" height="400" class="bg-white border border-gray-400 items-center hover:">
+          <!-- Garis dari kiri atas -->
+          <line x1="0" y1="0" x2="400" y2="200" stroke="green" stroke-width="2" class="animate-left-top" />
+
+          <!-- Garis dari kiri bawah -->
+          <line x1="0" y1="400" x2="400" y2="200" stroke="red" stroke-width="2" class="animate-left-bottom" />
+
+          <!-- Garis dari kanan atas-->
+          <line x1="400" y1="200" x2="800" y2="0" stroke="blue" stroke-width="2" class="animate-right-top" />
+
+          <!-- Garis dari kanan bawah -->
+          <line x1="400" y1="200" x2="800" y2="400" stroke="orange" stroke-width="2" class="animate-right-bottom" />
+        </svg>
+      </section>
+
       <!-- Intro -->
       <p class="text-sm mt-10">Profile</p>
       <hr class="border-t border-gray-800" />
-      <section class="flex flex-col lg:flex-row items-center lg:items-start gap-8 mt-6">
-        <!-- teks -->
+      <!-- <section class="flex flex-col lg:flex-row items-center lg:items-start gap-8 mt-6">
+        teks
         <div class="flex-1 text-center lg:text-left">
-          <h1 class="text-6xl font-bold my-2 noto2">Saladin <span class="block sm:inline text-4xl sm:text-6xl">Octiano Bonanza</span></h1>
+          <h1 class="text-6xl font-bold my-2 noto2">Saladin <span class="block sm:inline text-4xl sm:text-6xl">Octiano
+              Bonanza</span></h1>
           <p class="text-base text-gray-700 tracking-wide my-3 item-center">
             Programmer | Designer | Student
           </p>
@@ -53,26 +74,13 @@
           </div>
         </div>
 
-        <!-- gambar -->
+        gambar
         <div class="w-80 items-center justify-center lg:mr-40">
           <img src="assets/profile.png" alt="foto profil" />
         </div>
       </section>
-
+ -->
       <hr class="border-t border-gray-800" />
-      <section class="flex flex-col lg:flex-row items-center lg:items-start gap-8 mt-6 ">
-        <!-- teks
-        <div class="flex-1">
-          <h1 class="text-6xl font-bold">Saladin </h1>
-          <p class="text-base text-gray-700 tracking-wide my-3">
-            Programmer | Designer | Student
-          </p>
-
-          gambar
-          <div class="w-90 items-center justify-center lg:mx-34">
-            <img src="" alt="foto profil" />
-          </div> -->
-      </section>
 
     </div>
 

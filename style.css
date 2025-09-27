@@ -29,3 +29,42 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+/* animasi */
+@layer utilities {
+      /* Kiri atas → tengah */
+      @keyframes line-left-top {
+        from { x2: 0; y2: 0; opacity: 0; }
+        to   { x2: 400; y2: 200; opacity: 1; }
+      }
+      .animate-left-top {
+        animation: line-left-top 1s ease-out forwards;
+      }
+
+      /* Kiri bawah → tengah */
+      @keyframes line-left-bottom {
+        from { x2: 0; y2: 400; opacity: 0; }
+        to   { x2: 400; y2: 200; opacity: 1; }
+      }
+      .animate-left-bottom {
+        animation: line-left-bottom 1s ease-out forwards;
+      }
+
+      /* Kanan atas → tengah */
+      @keyframes line-right-top {
+        from { x1: 800; y1: 0; opacity: 0; }
+        to   { x1: 400; y1: 200; opacity: 1; }
+      }
+      .animate-right-top {
+        animation: line-right-top 1s ease-out forwards;
+      }
+
+      /* Kanan bawah → tengah */
+      @keyframes line-right-bottom {
+        from { x1: 800; y1: 400; opacity: 0; }
+        to   { x1: 400; y1: 200; opacity: 1; }
+      }
+      .animate-right-bottom {
+        animation: line-right-bottom 1s ease-out forwards;
+      }
+    }
